@@ -14,7 +14,6 @@
             background-color: #f4f6f9;
             display: flex;
             flex-direction: column;
-            overflow: hidden;
         }
         .btn-arrow {
             display: inline-block;
@@ -55,7 +54,7 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            background-color: #002f4b;
+            background-color: #023a5b;
             color: white;
             padding: 5px 10px;
             gap: 20px;
@@ -149,7 +148,6 @@
             flex-direction: column;
             width: fit-content; 
             width: 250px; 
-            padding: 10px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -222,7 +220,7 @@
             font-size: medium;
             box-sizing: border-box;
             margin: 10px;
-            height: 83vh;
+            height: 82vh;
         }
         .profile-header {
             display: flex;
@@ -231,7 +229,7 @@
             font-size: small;
         }
         .update-btn {
-            background-color: #007bff;
+            background-color: #00629a;
             color: white;
             border: none;
             padding: 10px 15px;
@@ -256,9 +254,25 @@
             display: flex;
             flex-direction: column;
         }
+        .profile-details h3 {
+            margin: 2px 0; 
+            line-height: 1.2; 
+            font-size: medium;
+        }
         .profile-details p {
             margin: 2px 0; 
             line-height: 1.2; 
+            color: #a7a7a7;
+            font-size: small;
+        }
+        .section p strong {
+            color: #000000;
+        }
+        .section p {
+            color: #a7a7a7;
+        }
+        .contact-info .gray {
+            color: #a7a7a7;
         }
 
         .user-info {
@@ -298,7 +312,7 @@
             border: none;
             cursor: pointer;
             font-size: 18px;
-            color: #007bff;
+            color: #006498;
             transition: color 0.2s;
         }
 
@@ -404,7 +418,7 @@
         }
 
         .btn-submit {
-            background-color: #007bff;
+            background-color: #00629a;
             color: white;
         }
 
@@ -413,12 +427,20 @@
         }
 
         hr {
-            background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2), transparent);
+            background-color: rgba(0, 0, 0, 0.2);
             border: 0;
             height: 1px;
-            margin: 0px 0 0px 0;box-sizing:
-            content-box;
+            margin: 0px 0 10px 0;
+            box-sizing: content-box;
             display: block;
+        }
+        .hr-full {
+            width: 100%;
+            height: 1px; 
+            background-color: rgba(0, 0, 0, 0.2); 
+            border: none;
+            margin: 0px 0 10px 0;
+            padding: 0;
         }
         .contact-info{
             font-size: small;
@@ -483,7 +505,7 @@
                 <hr>
                 <div class="profile-pic"></div>
                 <div class="profile-details">
-                    <p><strong>Иванов Иван Иванович</strong></p>
+                    <h3><strong>Иванов Иван Иванович</strong></h3>
                     <p>ИНН: 950825786299</p>
                 </div>
             </div>
@@ -509,7 +531,7 @@
             </div>
             <div class="contact-info">
                 <p><strong>Электронная почта:</strong> <span class="gray">user@gmail.com</span></p>
-                <p><strong>Специальная связь:</strong> 6666</p>
+                <p><strong>Специальная связь:</strong> <span class="gray"> 6666</span></p>
                 <p><strong>Телефон:</strong> <span class="gray">+7 (747) 222-33-44</span></p>
             </div>
         </section>
@@ -518,6 +540,7 @@
                 <h3>Добавление контактных данных</h3>
                 <button class="close-btn">✖</button>
             </div>
+                <hr class="hr-full">
             <div class="contact-item">
                 <label>Электронный адрес</label>
                 <input type="email" class="email-address" placeholder="7nett@mail.ru" value="7nett@mail.ru">
@@ -540,6 +563,7 @@
                 <label>Идентификатор канала связи</label>
                 <input type="text" class="text" placeholder="6666" value="6666">
             </div>
+                <hr class="hr-full">
             <div class="contact-buttons">
                 <button class="btn-reset">Сброс</button>
                 <button class="btn-submit">Добавить</button>
