@@ -220,9 +220,9 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             font-size: medium;
-            height: 100vh;
             box-sizing: border-box;
             margin: 10px;
+            height: 83vh;
         }
         .profile-header {
             display: flex;
@@ -275,6 +275,7 @@
         .user-name {
             font-size: 12px; 
             font-weight: bold;
+            padding-top: 5px;
         }
 
         .verifier {
@@ -329,6 +330,7 @@
             flex-direction: column;
             gap: 8px;
             position: relative;
+            font-size: small;
         }
 
         .contact-item select,
@@ -349,7 +351,7 @@
             padding-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            font-size: 15px;
+            font-size: smaller;
             background: #fff;
             transition: border-color 0.3s, box-shadow 0.3s;
         }
@@ -511,17 +513,15 @@
                 <p><strong>Телефон:</strong> <span class="gray">+7 (747) 222-33-44</span></p>
             </div>
         </section>
-        <section class="contact-form">
+         <section class="contact-form">
             <div class="contact-form-header">
                 <h3>Добавление контактных данных</h3>
                 <button class="close-btn">✖</button>
             </div>
-        
             <div class="contact-item">
                 <label>Электронный адрес</label>
                 <input type="email" class="email-address" placeholder="7nett@mail.ru" value="7nett@mail.ru">
             </div>
-        
             <div class="contact-item">
                 <button class="delete-btn">🗑</button>
                 <label>Наименование вида связи</label>
@@ -531,7 +531,6 @@
                 <label>Идентификатор канала связи</label>
                 <input type="text" class="text" placeholder="+7 (747) 222-33-44" value="+7 (747) 222-33-44">
             </div>
-        
             <div class="contact-item">
                 <button class="delete-btn">🗑</button>
                 <label>Наименование вида связи</label>
@@ -541,13 +540,11 @@
                 <label>Идентификатор канала связи</label>
                 <input type="text" class="text" placeholder="6666" value="6666">
             </div>
-            
-            <hr>
             <div class="contact-buttons">
                 <button class="btn-reset">Сброс</button>
                 <button class="btn-submit">Добавить</button>
             </div>
-        </section>        
+        </section>
     </main>
 </body>
 </html>
